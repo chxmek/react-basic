@@ -1,7 +1,9 @@
 const Item = ()=> {
+  const name = "พักโรงแรม"
+  const amount = 5000
   return (
     <li>
-      ค่าเดินทาง <span>-200</span>
+      {name} <span>-{amount}</span>
     </li>
   );
 }
