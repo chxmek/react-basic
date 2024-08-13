@@ -1,11 +1,12 @@
-import Item from "./Item"
+import Item from "./Item";
+import "./Transaction.css";
 
 const Transaction = () => {
   return (
-    <ul>
+    <ul className="item-list">
       <Item />
     </ul>
   );
 };
 
-export default Transaction
+export default Transaction;
