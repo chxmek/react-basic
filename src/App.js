@@ -1,4 +1,3 @@
-import "./App.css";
 import Transaction from "./components/Transaction";
 
 const Title = ()=> <h1>โปรแกรมบัญชี รายรับ - รายจ่าย</h1>
