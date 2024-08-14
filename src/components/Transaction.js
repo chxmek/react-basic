@@ -17,9 +17,11 @@ const Transaction = () => {
     //   <Item title={data[2].title} amount={data[2].amount} />
     //   <Item title={data[3].title} amount={data[3].amount} />
     // </ul>
+
     <ul className="item-list">
       {data.map((element) => {
-        return <Item title = {element.title} amount = {element.amount}/>;   // loop ค่าแสดงผลแบบ array.map
+        // return <Item title={element.title} amount={element.amount} />;   // loop ค่าแบบ array.map
+        return <Item {...element} />;                                       // loop ค่าแบบ array.map, spread operator (...element)
       })}
     </ul>
   );
