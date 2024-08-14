@@ -1,10 +1,8 @@
-const Item = (props)=> {        // *รับค่า props(property)
-  // const name = "พักโรงแรม"   // เพิ่มตัวแปร
-  // const amount = 5000
+const Item = (props)=> {          // รับค่า props(property)
+  const {title, amount} = props   // เก็บค่าที่รับมาในตัวแปร title, amount
   return (
     <li>
-      {/* {name} <span>-{amount}</span> */}
-      {props.title} <span>{props.amount}</span>     {/* แสดงค่า property */}
+      {title} <span>{amount}</span>     {/* แสดงค่า property */}
     </li>
   );
 }
