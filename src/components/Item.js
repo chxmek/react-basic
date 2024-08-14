@@ -9,9 +9,9 @@ const Item = (props) => {           // รับค่า props(property)
   );
 };
 
-Item.propTypes = {            // ให้ตรวจสอบชนิดข้อมูลว่าใช้ถูกต้องหรือไม่
-  title: PropTypes.string,
-  amount: PropTypes.number,
+Item.propTypes = {                        // ให้ตรวจสอบชนิดข้อมูลว่าใช้ถูกต้องหรือไม่
+  title: PropTypes.string.isRequired,     // ใช้ isRequired เพื่อบังคับให้ป้อนข้อมูล
+  amount: PropTypes.number.isRequired,
 };
 
 export default Item;
