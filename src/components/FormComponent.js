@@ -14,7 +14,7 @@ const FormComponent = ()=> {
 
     return (
         <div>
-            <form onSubmit={saveItem}>
+            <form onSubmit={saveItem}>              {/* ทำงานเมื่อกดปุ่ม submit */}
                 <div className="form-control">
                     <label>ชื่อรายการ</label>
                     <input type="text" placeholder="ระบุชื่อรายการของคุณ" onChange={inputTitle}></input>
