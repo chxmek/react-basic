@@ -21,7 +21,7 @@ const Transaction = () => {
     <ul className="item-list">
       {data.map((element) => {
         // return <Item title={element.title} amount={element.amount} />;   // loop ค่าแบบ array.map
-        return <Item {...element} key = {element.id}/>;                                       // loop ค่าแบบ array.map, spread operator (...element)
+        return <Item {...element} key = {element.id}/>;                     // loop ค่าแบบ array.map, spread operator (...element) and key เพื่อให้ app รู้ว่าเป็น Item ตัวไหน
       })}
     </ul>
   );
